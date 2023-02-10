@@ -1,7 +1,7 @@
 name: Build and deploy Python app to Azure Web App
 
 env:
-  AZURE_WEBAPP_NAME: your-app-name # set this to your application's name
+  AZURE_WEBAPP_NAME: demo-fastapi-60491520 # set this to your application's name
   WORKING_DIRECTORY: '.' # set this to the path to your path of working directory inside github repository, defaults to the repository root
   PYTHON_VERSION: '3.9' 
   STARTUP_COMMAND: 'gunicorn -w 2 -k uvicorn.workers.UvicornWorker webapp.main:app' # set this to the startup command required to start the gunicorn server. default it is empty
